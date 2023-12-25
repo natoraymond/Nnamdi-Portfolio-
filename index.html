@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/0a4f66c837.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" class="header-tag">
+        <div class="container">
+            <nav>
+                <img src="images/logonato.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Nnamdi</span><br>Raymond from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------- about section------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/NatoPics1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! my name is Nnamdi Nnadi. I am a web Developer, and i specialize in HTML,CSS and Javascript, that just works across all platform<b>
+                        and browsers. I'm passionate about creating and developing web interfaces. I have experience in this area ofwork with multiple quality projects<br>
+
+                        I care deeply about building interfaces that are useable and pleasant for the most number of people possible.<br>
+                        I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting administrative technology and for educating pther team members.<br>
+                        And also as an individual, with my positive attitude and tireless energy I encourage others to work hard and succeed.<br>
+                        In my free time, I like to watch movies, anime and to listen to music.
+                    </b></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web | App Development</li>
+                            <li><span>Software Tester</span><br>Designing Web | App Interfaces</li>
+                            <li><span>App Development</span><br> Building Android | iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2010 - 2017</span><br>ICT Building university of Nigeria Nsukka.</li>
+                            <li><span>2019 - 2021</span><br>Data Input Analyst seamfix Innovation center UNN. </li>
+                            <li><span>2017 - Current/Remote</span><br> Software Tester @ seamfix innovataion Nigeria Limited Lagos. </li>
+                            <li><span>2023 - Current</span><br> Internship at Genesys Learable </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>University of Nigeria, Nsukka</li>
+                            <li><span>2021</span><br>Classvisa Academy Bootcamp California</li>
+                            <li><span>2023</span><br> Coursera Bootcamp (Html Css Javascript React).</li>
+                            <li><span>2023</span><br> Scaler Academy Bootcamp.</li>
+                            <li><span>2023</span><br> Upskill Program Geneesy.</li>
+                            <li><span>2023</span><br> Internship at Genesys Learable.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services section -------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Responsive Design</h2>
+                <p>A good web design is easy to use aesthetically pleasing, and suitsthe users and brand of the website.
+                    Many webpages are designed with a focus on simplicity so that no extraneous information and functionality that might distract or confuse user appears. And that is what I Offer?</p>
+                <a href="#">Learn more</a>
+               </div> 
+               <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Web Design</h2>
+                <p> One of the key ingredients to a successful product is the creation of effective, efficient, and visually pleasing dispalys. Removing as many potential points of users frustration as possible is a critical consideration?</p>
+                <a href="#">Learn more</a>
+               </div> 
+               <div>
+                <!-- <i class="fa-brands fa-app-store"></i> -->
+                <i class="fa-solid fa-code"></i>
+                <h2>Clean Code</h2>
+                <p> Programming is the at of telling another human what one wants the computer to do. By writing clean code, then I am helping my future self and my co-workers. I am reducing the cost of maintenance of the application I am writing. I am making it easier to fix bugs. Essentially I am making the life easier for everyone involved in the project.</p>
+                <a href="#">Learn more</a>
+               </div> 
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio section -------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/covid-19.png" class="logo" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download if from play store.</p>
+                        <a href="https://covid19-tracker-app-six.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Payment.png" class="logo" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="https://learn-payment.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Todo list.png" class="logo" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="https://todo-list-sigma-lac.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/amazoma.png" class="logo" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="https://amazon-clone-app-tau.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calc.png" class="logo" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="https://calculator-app-seven-mu.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sch.jpg" class="logo" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sch3.jpg" class="logo" >
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/front.png" class="logo" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world. Download if from play store.</p>
+                        <a href="https://frontend-mentor-rating-component.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact section -------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> contact@nnamdi.raymondoct@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +234-8063-290-848 </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  @Raytech.technology.Ltd <i class="fa-solid fa-heart"></i> Inestement </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right= "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwB1pJBNfsvp6KTrVCNIPcKiv4iyEEeGlivKZq84gzX3MeaenUXXKOFxkepmIGqzIrbeg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById('msg');
+
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            // .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </body>
+</html>
